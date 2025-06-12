@@ -11,11 +11,9 @@ const createTask = (req, res) => {
 
         const newTask = { id: uuidv4(), title, description };
         tasks.push(newTask);
-        console.log(newTask);
 
         res.status(200).json(newTask);
     } catch (error) {
-        console.error("Error creating task:", error);
         res.status(500).json({ error: "Server error while creating task" });
     }
 };
@@ -84,7 +82,11 @@ const updateTask = (req, res) => {
   task.title = title;
   task.description = description;
 
-  res.status(200).json(task);
+  res.status(200).json({
+    success: true,
+    message: "Task Updated Successfully",
+    data: task
+  });
 };
 
 const deleteTask = (req, res) => {
