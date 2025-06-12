@@ -29,22 +29,22 @@ A simple RESTful API built using Node.js and Express.js to perform CRUD (Create,
 
         🧪 Sample Request:
             GET /tasks?page=2&limit=3
-            Image Reference: ![Get Task Request](./images/getTaskRequest.png)
+            Image Reference: ![Get Task Request](https://github.com/prajwal-tarpe/CRUD-API/blob/main/images/getTasksRequest.png)
 
         ✅ Sample Response:
-            Image Reference: ![Get Task JSON Response](./images/getTasksResponse.png)
+            Image Reference: ![Get Task JSON Response](https://github.com/prajwal-tarpe/CRUD-API/blob/main/images/getTasksResponse.png)
 
     2. Post/tasks:
         🔍 Purpose: To create a new task and add it to the in-memory task list.
                     Each task is automatically assigned a unique identifier (UUID) using the uuid library to ensure task IDs are globally unique.
 
         📥 Required Request Body (JSON):
-            Image Reference: ![Post Task Request](./images/postTaskRequest.png)
+            Image Reference: ![Post Task Request](https://github.com/prajwal-tarpe/CRUD-API/blob/main/images/postTaskRequest.png)
 
         ✅ Sample Response:
             Image Reference: 
-                Success: ![Post Task JSON Response](./images/postTaskResponse.png)
-                Bad Request: ![Post Task JSON Response](./images/postTaskBadResponse.png)
+                Success: ![Post Task JSON Response](https://github.com/prajwal-tarpe/CRUD-API/blob/main/images/postTaskResponse.png)
+                Bad Request: ![Post Task JSON Response](https://github.com/prajwal-tarpe/CRUD-API/blob/main/images/postTaskBadResponse.png)
 
     3. GET /tasks/:id
         🔍 Purpose: To retrieve a specific task by its unique ID.
@@ -53,12 +53,12 @@ A simple RESTful API built using Node.js and Express.js to perform CRUD (Create,
                 :id — The unique identifier of the task to fetch.
 
         🧪 Sample Request:
-            Image Reference: ![GET Task by ID Request](./images/getTaskByIdRequest.png)
+            Image Reference: ![GET Task by ID Request](https://github.com/prajwal-tarpe/CRUD-API/blob/main/images/getTaskByIdRequest.png)
 
         ✅ Sample Success Response (200 OK):
                 Image Reference: 
-                    Success: ![GET Task by ID JSON Response](./images/getTaskByIdResponse.png)
-                    Not Found: ![GET Task by ID Not found JSON Response](./images/getTaskByIdNotFound.png)
+                    Success: ![GET Task by ID JSON Response](https://github.com/prajwal-tarpe/CRUD-API/blob/main/images/getTaskByIdResponse.png)
+                    Not Found: ![GET Task by ID Not found JSON Response](https://github.com/prajwal-tarpe/CRUD-API/blob/main/images/getTaskByIdNotFound.png)
 
     4. PUT /tasks/:id
         🔄 Purpose: To update an existing task by its unique ID.
@@ -69,10 +69,10 @@ A simple RESTful API built using Node.js and Express.js to perform CRUD (Create,
             title: (string) The updated title of the task.
             description: (string) The updated description of the task.
 
-            Image Reference: ![GET Task by ID Request](./images/putTaskRequest.png)
+            Image Reference: ![GET Task by ID Request](https://github.com/prajwal-tarpe/CRUD-API/blob/main/images/putTaskRequest.png)
 
         ✅ Sample Success Response (200 OK):
-            Image Reference: ![PUT Task by ID JSON Response](./images/putTaskResponse.png)
+            Image Reference: ![PUT Task by ID JSON Response](https://github.com/prajwal-tarpe/CRUD-API/blob/main/images/putTaskResponse.png)
 
     5. DELETE /tasks/:id
         🗑️ Purpose: To delete a specific task by its unique ID.
@@ -80,4 +80,4 @@ A simple RESTful API built using Node.js and Express.js to perform CRUD (Create,
         🔑 Path Parameter: :id — The unique identifier of the task to delete.
 
         🧪 Sample Request & Response:
-            Image Reference: ![DELETE Task by ID Request & Response](./images/deleteTaskReq&Res.png)
+            Image Reference: ![DELETE Task by ID Request & Response](https://github.com/prajwal-tarpe/CRUD-API/blob/main/images/deleteTaskReq%26Res.png)
